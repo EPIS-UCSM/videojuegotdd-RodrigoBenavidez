@@ -1,0 +1,9 @@
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe.config
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.pdb
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Form1.resources
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Properties.Resources.resources
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.GenerateResource.Cache
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.exe
+c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.pdb
