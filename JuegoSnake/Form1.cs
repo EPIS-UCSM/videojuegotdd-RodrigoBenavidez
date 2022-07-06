@@ -104,5 +104,13 @@ namespace JuegoSnake
                 }
         }
 
+        public void ReiniciarJuego()
+        {
+            foreach (PictureBox Serpiente in Lista) { this.Controls.Remove(Serpiente); }
+            this.Controls.Remove(Comida);
+            IniciarJuego();
+
+        }
+
     }
 }
