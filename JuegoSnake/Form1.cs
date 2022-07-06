@@ -86,11 +86,22 @@ namespace JuegoSnake
                     // intercambio de seguimiento 
                     Lista[i].Location = new Point((Lista[i - 1].Location.X), (Lista[i].Location.Y));
                     Lista[i].Location = new Point(Lista[i].Location.X, Lista[i - 1].Location.Y);
-
-
                 }
             }
+                // detectar colisión 
+                for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
+                {
+                    if (Lista[contarPiezas].Bounds.IntersectsWith(Comida.Bounds))
+                    {
+                        this.Controls.Remove(Comida); // remueve la comida 
+                        tiempo = Convert.ToInt32(timer1.Interval); // aumenta el tiempo
+                        if (tiempo > 10) { timer1.Interval = tiempo - 10; }
+                        lblPuntos.Text = (Convert.ToInt32(lblPuntos.Text) + 1).ToString();
+                        CrearComida(); // crea nueva comida
+                        CrearSnake(Lista, this, Lista[Lista.Count - 1].Location.X * TamanioPiezaPrincipal, 0); // nueva parte del snake
 
+                    }
+                }
         }
 
     }
