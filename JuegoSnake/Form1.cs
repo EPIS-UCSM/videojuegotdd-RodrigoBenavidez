@@ -75,9 +75,18 @@ namespace JuegoSnake
             {
                 if (i == 0)
                 {
-
+                    if (Direccion == "right") nx = nx + TamanioPiezaPrincipal;
+                    else if (Direccion == "left") nx = nx - TamanioPiezaPrincipal;
+                    else if (Direccion == "up") ny = ny - TamanioPiezaPrincipal;
+                    else if (Direccion == "down") ny = ny + TamanioPiezaPrincipal;
+                    Lista[0].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("head" + Direccion);
+                    Lista[0].Location = new Point(nx, ny);
                 }
-                else { 
+                else {
+                    // intercambio de seguimiento 
+                    Lista[i].Location = new Point((Lista[i - 1].Location.X), (Lista[i].Location.Y));
+                    Lista[i].Location = new Point(Lista[i].Location.X, Lista[i - 1].Location.Y);
+
 
                 }
             }
