@@ -51,7 +51,17 @@ namespace JuegoSnake
         }
         private void CrearComida()
         {
+            Random rnd = new Random();
+            int enterox = rnd.Next(1, this.Width - TamanioPiezaPrincipal - 10);
+            int enteroy = rnd.Next(1, this.Height - TamanioPiezaPrincipal - 40);
 
+            PictureBox pb = new PictureBox();
+            pb.Location = new Point(enterox, enteroy);
+            pb.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("manzanaa");
+            pb.BackColor = Color.Transparent;
+            pb.SizeMode = PictureBoxSizeMode.AutoSize;
+            Comida = pb;
+            this.Controls.Add(pb);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
