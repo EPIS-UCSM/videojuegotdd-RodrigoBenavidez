@@ -41,6 +41,13 @@ namespace JuegoSnake
         public void CrearSnake(List<PictureBox> ListaPelota, Form formulario, int posicionx, int posiciony)
         {
 
+            PictureBox pb = new PictureBox();
+            pb.Location = new Point(posicionx, posiciony);
+            pb.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("bodySnake");
+            pb.BackColor = Color.Transparent;
+            pb.SizeMode = PictureBoxSizeMode.AutoSize;
+            ListaPelota.Add(pb);
+            formulario.Controls.Add(pb);
         }
         private void CrearComida()
         {
