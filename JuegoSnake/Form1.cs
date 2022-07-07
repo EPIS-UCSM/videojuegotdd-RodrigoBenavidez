@@ -145,7 +145,28 @@ namespace JuegoSnake
             for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
             {
                 if (Lista[0].Bounds.IntersectsWith(Lista[contarPiezas].Bounds))
-                { ReiniciarJuego(); }
+                {
+                    timer1.Stop();
+
+                    string message = "GAME OVER - Desea continuar?";
+                    string caption = "Error Detectado";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    DialogResult result;
+
+                    // Displays the MessageBox.
+                    result = MessageBox.Show(message, caption, buttons);
+                    if (result == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        lblNivel.Text = "1";
+                        timer1.Start();
+                        ReiniciarJuego();
+                    }
+                    else
+                    {
+                        // Closes the parent form.
+                        this.Close();
+                    }
+                }
 
             }
         }
