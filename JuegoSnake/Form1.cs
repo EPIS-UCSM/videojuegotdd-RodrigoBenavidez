@@ -116,6 +116,13 @@ namespace JuegoSnake
             IniciarJuego();
 
         }
+        private void MoverPieza(object sender, KeyEventArgs e)
+        {
+            Direccion = ((e.KeyCode & Keys.Up) == Keys.Up) ? "up" : Direccion;
+            Direccion = ((e.KeyCode & Keys.Down) == Keys.Down) ? "down" : Direccion;
+            Direccion = ((e.KeyCode & Keys.Left) == Keys.Left) ? "left" : Direccion;
+            Direccion = (((e.KeyCode & Keys.Right) == Keys.Right)) ? "right" : Direccion;
 
+        }
     }
 }
