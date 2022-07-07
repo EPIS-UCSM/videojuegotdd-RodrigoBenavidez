@@ -116,9 +116,31 @@ namespace JuegoSnake
             }
             // detectar solisión con paredes (form)
             if ((Lista[0].Location.X >= this.Width - 15) || (Lista[0].Location.Y >= this.Height - 50) || (Lista[0].Location.Y < -10) || (Lista[0].Location.X < -30))
+            {
+
+                timer1.Stop();
+
+                string message = "GAME OVER - Desea continuar?";
+                string caption = "Error Detectado";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                if (result == System.Windows.Forms.DialogResult.Yes)
                 {
+                    lblNivel.Text = "1";
+                    timer1.Start();
                     ReiniciarJuego();
                 }
+                else
+                {
+                    // Closes the parent form.
+                    this.Close();
+                }
+
+
+            }
             // colisión con el cuerpo del snake (piezas)
             for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
             {
