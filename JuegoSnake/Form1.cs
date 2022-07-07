@@ -22,21 +22,22 @@ namespace JuegoSnake
             InitializeComponent();
             IniciarJuego();
         }
-        public void IniciarJuego() {
+        public void IniciarJuego(int interval = 200)
+        {
             tiempo = 10;
             Direccion = "right";
-            timer1.Interval = 200;
+            timer1.Interval = interval;
             lblPuntos.Text = "0";
             Lista = new List<PictureBox>();
             // Piezas iniciales 
             for (int i = 2; 0 <= i; i--)
             {
                 CrearSnake(Lista, this, (i * TamanioPiezaPrincipal) + 70, 80);
-            
+
             }
             CrearComida();
 
-        
+
         }
         public void CrearSnake(List<PictureBox> ListaPelota, Form formulario, int posicionx, int posiciony)
         {
@@ -51,6 +52,7 @@ namespace JuegoSnake
         }
         private void CrearComida()
         {
+
             Random rnd = new Random();
             int enterox = rnd.Next(1, this.Width - TamanioPiezaPrincipal - 10);
             int enteroy = rnd.Next(1, this.Height - TamanioPiezaPrincipal - 40);
@@ -62,6 +64,7 @@ namespace JuegoSnake
             pb.SizeMode = PictureBoxSizeMode.AutoSize;
             Comida = pb;
             this.Controls.Add(pb);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -82,10 +85,13 @@ namespace JuegoSnake
                     Lista[0].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("head" + Direccion);
                     Lista[0].Location = new Point(nx, ny);
                 }
-                else {
+                else
+                {
                     // intercambio de seguimiento 
                     Lista[i].Location = new Point((Lista[i - 1].Location.X), (Lista[i].Location.Y));
                     Lista[i].Location = new Point(Lista[i].Location.X, Lista[i - 1].Location.Y);
+
+
                 }
             }
             // detectar colisión 
@@ -141,7 +147,7 @@ namespace JuegoSnake
 
 
             }
-            // colisión con el cuerpo del snake (piezas)
+            // colisión con el cuerpo del snake (piezas )
             for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
             {
                 if (Lista[0].Bounds.IntersectsWith(Lista[contarPiezas].Bounds))
@@ -169,13 +175,16 @@ namespace JuegoSnake
                 }
 
             }
+
+
+
         }
 
-        public void ReiniciarJuego()
+        public void ReiniciarJuego(int interval = 200)
         {
             foreach (PictureBox Serpiente in Lista) { this.Controls.Remove(Serpiente); }
             this.Controls.Remove(Comida);
-            IniciarJuego();
+            IniciarJuego(interval);
 
         }
         private void MoverPieza(object sender, KeyEventArgs e)
