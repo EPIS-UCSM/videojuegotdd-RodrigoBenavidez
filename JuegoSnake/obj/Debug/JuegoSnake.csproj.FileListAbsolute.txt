@@ -7,3 +7,25 @@ c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debu
 c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.GenerateResource.Cache
 c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.exe
 c:\users\pc\documents\visual studio 2012\Projects\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.pdb
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe.config
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.pdb
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.AssemblyReference.cache
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.SuggestedBindingRedirects.cache
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Form1.resources
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Properties.Resources.resources
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.GenerateResource.cache
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.CoreCompileInputs.cache
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.exe
+C:\Users\Walther Santos\Workspace\Visual Studio\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.pdb
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe.config
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.exe
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\bin\Debug\JuegoSnake.pdb
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Form1.resources
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.exe
+C:\Users\Usuario\Desktop\Testing Fase 3\Game\Version 2\JuegoSnake\JuegoSnake\obj\Debug\JuegoSnake.pdb
