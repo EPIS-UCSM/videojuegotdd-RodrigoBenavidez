@@ -107,6 +107,13 @@ namespace JuegoSnake
                 {
                     ReiniciarJuego();
                 }
+            // colisión con el cuerpo del snake (piezas)
+            for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
+            {
+                if (Lista[0].Bounds.IntersectsWith(Lista[contarPiezas].Bounds))
+                { ReiniciarJuego(); }
+
+            }
         }
 
         public void ReiniciarJuego()
