@@ -88,22 +88,34 @@ namespace JuegoSnake
                     Lista[i].Location = new Point(Lista[i].Location.X, Lista[i - 1].Location.Y);
                 }
             }
-                // detectar colisión 
-                for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
+            // detectar colisión 
+            for (int contarPiezas = 1; contarPiezas < Lista.Count; contarPiezas++)
+            {
+                if (Lista[contarPiezas].Bounds.IntersectsWith(Comida.Bounds))
                 {
-                    if (Lista[contarPiezas].Bounds.IntersectsWith(Comida.Bounds))
+                    this.Controls.Remove(Comida); // remueve la comida 
+                    tiempo = Convert.ToInt32(timer1.Interval); // aumenta el tiempo
+                    if (tiempo > 10) { timer1.Interval = tiempo - 10; }
+                    lblPuntos.Text = (Convert.ToInt32(lblPuntos.Text) + 1).ToString();
+
+                    // Sube de nivel
+                    if (Convert.ToInt32(lblPuntos.Text) >= 3)
                     {
-                        this.Controls.Remove(Comida); // remueve la comida 
-                        tiempo = Convert.ToInt32(timer1.Interval); // aumenta el tiempo
-                        if (tiempo > 10) { timer1.Interval = tiempo - 10; }
-                        lblPuntos.Text = (Convert.ToInt32(lblPuntos.Text) + 1).ToString();
+                        lblNivel.Text = (Convert.ToInt32(lblNivel.Text) + 1).ToString();
+                        ReiniciarJuego(200 - (Convert.ToInt32(lblNivel.Text) - 1) * 20);
+                    }
+                    else
+                    {
                         CrearComida(); // crea nueva comida
                         CrearSnake(Lista, this, Lista[Lista.Count - 1].Location.X * TamanioPiezaPrincipal, 0); // nueva parte del snake
-
                     }
+
+
+
                 }
+            }
             // detectar solisión con paredes (form)
-                if ((Lista[0].Location.X >= this.Width - 15) || (Lista[0].Location.Y >= this.Height - 50) || (Lista[0].Location.Y < -10) || (Lista[0].Location.X < -30))
+            if ((Lista[0].Location.X >= this.Width - 15) || (Lista[0].Location.Y >= this.Height - 50) || (Lista[0].Location.Y < -10) || (Lista[0].Location.X < -30))
                 {
                     ReiniciarJuego();
                 }
