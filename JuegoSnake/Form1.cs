@@ -102,6 +102,11 @@ namespace JuegoSnake
 
                     }
                 }
+            // detectar solisión con paredes (form)
+                if ((Lista[0].Location.X >= this.Width - 15) || (Lista[0].Location.Y >= this.Height - 50) || (Lista[0].Location.Y < -10) || (Lista[0].Location.X < -30))
+                {
+                    ReiniciarJuego();
+                }
         }
 
         public void ReiniciarJuego()
