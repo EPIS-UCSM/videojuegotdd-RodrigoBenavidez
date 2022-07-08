@@ -106,10 +106,9 @@ namespace JuegoSnake
                     lblPuntos.Text = (Convert.ToInt32(lblPuntos.Text) + 1).ToString();
 
                     // Sube de nivel
-                    if (Convert.ToInt32(lblPuntos.Text) >= 3)
+                    if (Convert.ToInt32(lblPuntos.Text) >= ComidaNecesariaPorNivel)
                     {
-                        lblNivel.Text = (Convert.ToInt32(lblNivel.Text) + 1).ToString();
-                        ReiniciarJuego(200 - (Convert.ToInt32(lblNivel.Text) - 1) * 20);
+                        iniciarNivel(Convert.ToInt32(lblNivel.Text) + 1);
                     }
                     else
                     {
@@ -216,15 +215,14 @@ namespace JuegoSnake
                     this.Close();
                 }
 
-            }
-            else
+            } else
             {
                 ReiniciarJuego(200 - (n - 1) * 20);
                 lblNivel.Text = n.ToString();
                 timer1.Start();
             }
 
-
+            
         }
 
         private void seleccioneNivelToolStripMenuItem_Click(object sender, EventArgs e)
