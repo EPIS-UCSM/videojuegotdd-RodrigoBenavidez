@@ -16,6 +16,7 @@ namespace JuegoSnake
         int TamanioPiezaPrincipal = 26, tiempo = 10;
         PictureBox Comida = new PictureBox();
         String Direccion = "right"; // Dirección del snake
+        int ComidaNecesariaPorNivel = 3;
 
         public Form1()
         {
@@ -274,6 +275,83 @@ namespace JuegoSnake
         private void pausarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             timer1.Stop();
+        }
+
+        private void manzanasToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 25;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 3;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void nroManzanasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        private void manzanasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 5;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 7;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 9;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 11;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 13;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 15;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 20;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 30;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 50;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
+        }
+
+        private void manzanasToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            ComidaNecesariaPorNivel = 70;
+            iniciarNivel(Convert.ToInt32(lblNivel.Text));
         }
 
         private void MoverPieza(object sender, KeyEventArgs e)
