@@ -236,6 +236,46 @@ namespace JuegoSnake
             timer1.Start();
         }
 
+        private void nivel2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(2);
+        }
+
+        private void nivel3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(3);
+        }
+
+        private void nivel4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(4);
+        }
+
+        private void nivel5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(5);
+        }
+
+        private void nivel6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(6);
+        }
+
+        private void nivel7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(7);
+        }
+
+        private void nivel8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(8);
+        }
+
+        private void pausarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
         private void MoverPieza(object sender, KeyEventArgs e)
         {
             Direccion = ((e.KeyCode & Keys.Up) == Keys.Up) ? "up" : Direccion;
