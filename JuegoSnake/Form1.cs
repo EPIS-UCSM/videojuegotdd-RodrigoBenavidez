@@ -221,6 +221,10 @@ namespace JuegoSnake
 
             }
 
+            private void seleccioneNivelToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+                timer1.Stop();
+            }
 
         }
 
