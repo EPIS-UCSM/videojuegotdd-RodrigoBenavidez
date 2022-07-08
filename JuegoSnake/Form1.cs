@@ -221,11 +221,17 @@ namespace JuegoSnake
 
             }
 
-            private void seleccioneNivelToolStripMenuItem_Click(object sender, EventArgs e)
-            {
-                timer1.Stop();
-            }
 
+        }
+
+        private void seleccioneNivelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        private void continuarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
 
         private void MoverPieza(object sender, KeyEventArgs e)
