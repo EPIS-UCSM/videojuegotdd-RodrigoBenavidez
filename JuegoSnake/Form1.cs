@@ -193,6 +193,37 @@ namespace JuegoSnake
             iniciarNivel(1);
         }
 
+        private void iniciarNivel(int n = 1)
+        {
+            if (n >= 9)
+            {
+                timer1.Stop();
+                string message = "CONGRATULATIONS \nUsted llego al nivel mas alto.\n¿desea iniciar a jugar de nuevo?";
+                string caption = "Victoria";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    iniciarNivel(1);
+                }
+                else
+                {
+                    // Closes the parent form.
+                    this.Close();
+                }
+
+            }
+            else
+            {
+
+            }
+
+
+        }
+
         private void MoverPieza(object sender, KeyEventArgs e)
         {
             Direccion = ((e.KeyCode & Keys.Up) == Keys.Up) ? "up" : Direccion;
