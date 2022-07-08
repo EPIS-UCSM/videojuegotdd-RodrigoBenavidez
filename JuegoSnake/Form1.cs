@@ -218,7 +218,9 @@ namespace JuegoSnake
             }
             else
             {
-
+                ReiniciarJuego(200 - (n - 1) * 20);
+                lblNivel.Text = n.ToString();
+                timer1.Start();
             }
 
 
