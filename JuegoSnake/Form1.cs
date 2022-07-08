@@ -187,6 +187,12 @@ namespace JuegoSnake
             IniciarJuego(interval);
 
         }
+
+        private void nivel1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            iniciarNivel(1);
+        }
+
         private void MoverPieza(object sender, KeyEventArgs e)
         {
             Direccion = ((e.KeyCode & Keys.Up) == Keys.Up) ? "up" : Direccion;
